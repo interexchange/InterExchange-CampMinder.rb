@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = "Interface for CampMinder ClientLink API."
   spec.homepage      = "https://github.com/interexchange/campminder-rb"
   spec.license       = "MIT"
-  spec.required_ruby_version = "~> 2.5"
+  spec.required_ruby_version = ">= 2.5", "< 4"
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
